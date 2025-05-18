@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+  <!-- 背景グラデーション -->
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4ECDC4" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#FF6B6B" stop-opacity="0.8" />
+    </linearGradient>
+    <radialGradient id="spotlight" cx="50%" cy="50%" r="70%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="white" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="white" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect x="0" y="0" width="1200" height="800" fill="url(#bg-gradient)" />
+  
+  <!-- スポットライトエフェクト -->
+  <circle cx="600" cy="400" r="500" fill="url(#spotlight)" />
+  
+  <!-- 装飾的な波形 -->
+  <path d="M0,600 Q300,550 600,600 T1200,600" fill="#FFD166" opacity="0.2" />
+  <path d="M0,650 Q300,700 600,650 T1200,650" fill="#FF6B6B" opacity="0.2" />
+  <path d="M0,700 Q300,650 600,700 T1200,700" fill="#4ECDC4" opacity="0.2" />
+  
+  <!-- ダンサーのシルエット -->
+  <!-- ダンサー1 -->
+  <g transform="translate(200, 450) scale(0.8)" opacity="0.8">
+    <circle cx="0" cy="-100" r="40" fill="#2A363B" />
+    <path d="M0,-60 C0,0 0,50 0,100" stroke="#2A363B" stroke-width="15" fill="none" />
+    <path d="M0,0 C-30,20 -60,50 -90,40" stroke="#2A363B" stroke-width="15" fill="none" />
+    <path d="M0,0 C30,20 60,50 90,40" stroke="#2A363B" stroke-width="15" fill="none" />
+    <path d="M0,100 C-20,150 -20,200 -10,250" stroke="#2A363B" stroke-width="15" fill="none" />
+    <path d="M0,100 C20,150 20,200 10,250" stroke="#2A363B" stroke-width="15" fill="none" />
+  </g>
+  
+  <!-- ダンサー2 -->
+  <g transform="translate(450, 500) scale(0.7)" opacity="0.8">
+    <circle cx="0" cy="-100" r="40" fill="#2A363B" />
+    <path d="M0,-60 C0,0 0,50 0,100" stroke="#2A363B" stroke-width="15" fill="none" />
+    <path d="M0,0 C-50,-20 -70,20 -90,60" stroke="#2A363B" stroke-width="15" fill="none" />
+    <path d="M0,0 C50,-20 70,20 90,60" stroke="#2A363B" stroke-width="15" fill="none" />
+    <path d="M0,100 C-30,120 -40,180 -20,220" stroke="#2A363B" stroke-width="15" fill="none" />
+    <path d="M0,100 C30,120 40,180 20,220" stroke="#2A363B" stroke-width="15" fill="none" />
+  </g>
+  
+  <!-- ダンサー3 -->
+  <g transform="translate(700, 480) scale(0.75)" opacity="0.8">
+    <circle cx="0" cy="-100" r="40" fill="#2A363B" />
+    <path d="M0,-60 C0,0 0,50 0,100" stroke="#2A363B" stroke-width="15" fill="none" />
+    <path d="M0,0 C-30,-40 -80,-30 -90,0" stroke="#2A363B" stroke-width="15" fill="none" />
+    <path d="M0,0 C30,-40 80,-30 90,0" stroke="#2A363B" stroke-width="15" fill="none" />
+    <path d="M0,100 C-20,150 -20,200 -10,250" stroke="#2A363B" stroke-width="15" fill="none" />
+    <path d="M0,100 C20,150 20,200 10,250" stroke="#2A363B" stroke-width="15" fill="none" />
+  </g>
+  
+  <!-- ダンサー4 -->
+  <g transform="translate(950, 500) scale(0.7)" opacity="0.8">
+    <circle cx="0" cy="-100" r="40" fill="#2A363B" />
+    <path d="M0,-60 C0,0 0,50 0,100" stroke="#2A363B" stroke-width="15" fill="none" />
+    <path d="M0,0 C-50,0 -70,30 -80,70" stroke="#2A363B" stroke-width="15" fill="none" />
+    <path d="M0,0 C50,0 70,30 80,70" stroke="#2A363B" stroke-width="15" fill="none" />
+    <path d="M0,100 C-20,130 -30,170 -10,210" stroke="#2A363B" stroke-width="15" fill="none" />
+    <path d="M0,100 C20,130 30,170 10,210" stroke="#2A363B" stroke-width="15" fill="none" />
+  </g>
+  
+  <!-- 音符や装飾 -->
+  <g>
+    <!-- 音符1 -->
+    <path d="M300,200 L310,190 L320,200 L310,210 Z" fill="white" opacity="0.7">
+      <animate attributeName="transform" attributeType="XML" type="translate" from="0 0" to="0 -50" dur="3s" repeatCount="indefinite" />
+      <animate attributeName="opacity" from="0.7" to="0" dur="3s" repeatCount="indefinite" />
+    </path>
+    
+    <!-- 音符2 -->
+    <path d="M700,250 L710,240 L720,250 L710,260 Z" fill="white" opacity="0.7">
+      <animate attributeName="transform" attributeType="XML" type="translate" from="0 0" to="0 -60" dur="4s" repeatCount="indefinite" />
+      <animate attributeName="opacity" from="0.7" to="0" dur="4s" repeatCount="indefinite" />
+    </path>
+    
+    <!-- 音符3 -->
+    <path d="M900,300 L910,290 L920,300 L910,310 Z" fill="white" opacity="0.7">
+      <animate attributeName="transform" attributeType="XML" type="translate" from="0 0" to="0 -70" dur="3.5s" repeatCount="indefinite" />
+      <animate attributeName="opacity" from="0.7" to="0" dur="3.5s" repeatCount="indefinite" />
+    </path>
+    
+    <!-- 音符4 -->
+    <path d="M500,350 L510,340 L520,350 L510,360 Z" fill="white" opacity="0.7">
+      <animate attributeName="transform" attributeType="XML" type="translate" from="0 0" to="0 -55" dur="2.5s" repeatCount="indefinite" />
+      <animate attributeName="opacity" from="0.7" to="0" dur="2.5s" repeatCount="indefinite" />
+    </path>
+    
+    <!-- 音符5 -->
+    <path d="M1000,200 L1010,190 L1020,200 L1010,210 Z" fill="white" opacity="0.7">
+      <animate attributeName="transform" attributeType="XML" type="translate" from="0 0" to="0 -40" dur="2s" repeatCount="indefinite" />
+      <animate attributeName="opacity" from="0.7" to="0" dur="2s" repeatCount="indefinite" />
+    </path>
+  </g>
+  
+  <!-- 丸い装飾 -->
+  <circle cx="200" cy="150" r="15" fill="white" opacity="0.2" />
+  <circle cx="400" cy="100" r="8" fill="white" opacity="0.2" />
+  <circle cx="600" cy="200" r="12" fill="white" opacity="0.2" />
+  <circle cx="800" cy="150" r="10" fill="white" opacity="0.2" />
+  <circle cx="1000" cy="100" r="15" fill="white" opacity="0.2" />
+  <circle cx="300" cy="300" r="8" fill="white" opacity="0.2" />
+  <circle cx="500" cy="250" r="12" fill="white" opacity="0.2" />
+  <circle cx="700" cy="300" r="10" fill="white" opacity="0.2" />
+  <circle cx="900" cy="250" r="15" fill="white" opacity="0.2" />
+  <circle cx="1100" cy="300" r="8" fill="white" opacity="0.2" />
+  
+  <!-- アニメーションする光の粒子 -->
+  <g>
+    <circle cx="300" cy="200" r="3" fill="white" opacity="0.7">
+      <animate attributeName="cy" from="200" to="150" dur="2s" repeatCount="indefinite" />
+      <animate attributeName="opacity" from="0.7" to="0" dur="2s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="500" cy="300" r="2" fill="white" opacity="0.7">
+      <animate attributeName="cy" from="300" to="250" dur="3s" repeatCount="indefinite" />
+      <animate attributeName="opacity" from="0.7" to="0" dur="3s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="700" cy="250" r="4" fill="white" opacity="0.7">
+      <animate attributeName="cy" from="250" to="200" dur="2.5s" repeatCount="indefinite" />
+      <animate attributeName="opacity" from="0.7" to="0" dur="2.5s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="900" cy="350" r="3" fill="white" opacity="0.7">
+      <animate attributeName="cy" from="350" to="300" dur="3.5s" repeatCount="indefinite" />
+      <animate attributeName="opacity" from="0.7" to="0" dur="3.5s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="1100" cy="200" r="2" fill="white" opacity="0.7">
+      <animate attributeName="cy" from="200" to="150" dur="4s" repeatCount="indefinite" />
+      <animate attributeName="opacity" from="0.7" to="0" dur="4s" repeatCount="indefinite" />
+    </circle>
+  </g>
+</svg>

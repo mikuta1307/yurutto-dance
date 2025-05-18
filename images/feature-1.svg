@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- 背景円 -->
+  <circle cx="100" cy="100" r="95" fill="#F7FFF7" stroke="#FF6B6B" stroke-width="2" />
+  
+  <!-- 自分のペースの図 -->
+  <g>
+    <!-- 人物シルエット -->
+    <g transform="translate(70, 70) scale(0.07)">
+      <path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z" fill="#2A363B" />
+    </g>
+    
+    <!-- 音符 -->
+    <g transform="translate(120, 75)">
+      <path d="M8,0 C3.582,0 0,3.582 0,8 C0,12.418 3.582,16 8,16 C12.418,16 16,12.418 16,8 C16,3.582 12.418,0 8,0 M14,8 C14,11.309 11.309,14 8,14 C4.691,14 2,11.309 2,8 C2,4.691 4.691,2 8,2 C11.309,2 14,4.691 14,8" fill="#4ECDC4" />
+      <path d="M9,4 L9,10.5 C9,11.328 8.328,12 7.5,12 L7.5,12 C6.672,12 6,11.328 6,10.5 L6,4 L9,4 Z" fill="#4ECDC4" />
+      <path d="M12,4 L6,4 C5.448,4 5,3.552 5,3 L5,3 C5,2.448 5.448,2 6,2 L12,2 C12.552,2 13,2.448 13,3 L13,3 C13,3.552 12.552,4 12,4" fill="#4ECDC4" />
+    </g>
+    
+    <!-- 時計を示す円 -->
+    <circle cx="70" cy="70" r="25" fill="none" stroke="#FFD166" stroke-width="3" stroke-dasharray="5,3" />
+    
+    <!-- 矢印 -->
+    <path d="M40,130 Q100,90 160,130" fill="none" stroke="#FF6B6B" stroke-width="3" stroke-linecap="round">
+      <animate attributeName="d" from="M40,130 Q100,90 160,130" to="M40,130 Q100,110 160,130" dur="3s" repeatCount="indefinite" />
+    </path>
+    
+    <!-- 「マイペース」テキスト -->
+    <text x="100" y="145" font-family="'Noto Sans JP', sans-serif" font-size="14" text-anchor="middle" fill="#2A363B">マイペース</text>
+  </g>
+</svg>

@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- 背景円 -->
+  <circle cx="100" cy="100" r="95" fill="white" stroke="#4ECDC4" stroke-width="2" />
+  
+  <!-- Bさん（52歳男性） -->
+  <g>
+    <!-- 顔 -->
+    <circle cx="100" cy="70" r="30" fill="#FFD166" />
+    
+    <!-- 髪型（薄め） -->
+    <path d="M75,55 Q85,40 100,38 Q115,40 125,55" fill="#7B7B7B" />
+    <path d="M75,55 C77,60 80,67 80,70" fill="#7B7B7B" />
+    <path d="M125,55 C123,60 120,67 120,70" fill="#7B7B7B" />
+    
+    <!-- 顔のパーツ -->
+    <g>
+      <!-- 目 -->
+      <ellipse cx="85" cy="65" rx="4" ry="3" fill="#2A363B" />
+      <ellipse cx="115" cy="65" rx="4" ry="3" fill="#2A363B" />
+      
+      <!-- 眉毛 -->
+      <path d="M80,53 Q85,50 90,53" fill="none" stroke="#2A363B" stroke-width="2" stroke-linecap="round" />
+      <path d="M110,53 Q115,50 120,53" fill="none" stroke="#2A363B" stroke-width="2" stroke-linecap="round" />
+      
+      <!-- 口（微笑み） -->
+      <path d="M90,85 Q100,90 110,85" fill="none" stroke="#2A363B" stroke-width="1.5" stroke-linecap="round" />
+      
+      <!-- ひげ -->
+      <path d="M85,90 Q100,95 115,90" fill="none" stroke="#7B7B7B" stroke-width="2" stroke-linecap="round" />
+      <path d="M90,95 L110,95" fill="none" stroke="#7B7B7B" stroke-width="2" stroke-linecap="round" />
+      
+      <!-- 額の皺 -->
+      <path d="M85,45 Q100,47 115,45" fill="none" stroke="#2A363B" stroke-width="0.5" stroke-linecap="round" opacity="0.5" />
+    </g>
+    
+    <!-- 首 -->
+    <path d="M92,100 L92,110 L108,110 L108,100" fill="#FFD166" />
+    
+    <!-- 体（ビジネススーツ） -->
+    <path d="M75,150 L85,110 L115,110 L125,150 Z" fill="#2A363B" />
+    <path d="M92,110 L92,130 L108,130 L108,110" fill="white" /> <!-- シャツ -->
+    <path d="M98,110 L98,130 L102,130 L102,110" fill="#4ECDC4" /> <!-- ネクタイ -->
+    
+    <!-- 腕 -->
+    <path d="M85,110 L70,130" fill="none" stroke="#FFD166" stroke-width="8" stroke-linecap="round" />
+    <path d="M115,110 L130,130" fill="none" stroke="#FFD166" stroke-width="8" stroke-linecap="round" />
+    
+    <!-- 手 -->
+    <circle cx="70" cy="130" r="5" fill="#FFD166" />
+    <circle cx="130" cy="130" r="5" fill="#FFD166" />
+    
+    <!-- ストレスと解放の表現 -->
+    <g>
+      <!-- ストレス -->
+      <g opacity="0.6">
+        <path d="M60,50 L65,55" stroke="#FF6B6B" stroke-width="1" />
+        <path d="M65,50 L60,55" stroke="#FF6B6B" stroke-width="1" />
+        
+        <path d="M55,60 L60,65" stroke="#FF6B6B" stroke-width="1" />
+        <path d="M60,60 L55,65" stroke="#FF6B6B" stroke-width="1" />
+        
+        <path d="M140,50 L145,55" stroke="#FF6B6B" stroke-width="1" />
+        <path d="M145,50 L140,55" stroke="#FF6B6B" stroke-width="1" />
+        
+        <path d="M135,60 L140,65" stroke="#FF6B6B" stroke-width="1" />
+        <path d="M140,60 L135,65" stroke="#FF6B6B" stroke-width="1" />
+        
+        <animate attributeName="opacity" values="0.6;0;0.6" dur="5s" repeatCount="indefinite" />
+      </g>
+      
+      <!-- 解放の表現 -->
+      <g opacity="0.8">
+        <path d="M75,160 Q85,155 95,160" fill="none" stroke="#FFD166" stroke-width="1" />
+        <path d="M105,160 Q115,155 125,160" fill="none" stroke="#FFD166" stroke-width="1" />
+        
+        <path d="M65,150 Q75,145 85,150" fill="none" stroke="#FFD166" stroke-width="1" />
+        <path d="M115,150 Q125,145 135,150" fill="none" stroke="#FFD166" stroke-width="1" />
+        
+        <animate attributeName="opacity" values="0.8;0.3;0.8" dur="3s" repeatCount="indefinite" />
+      </g>
+    </g>
+    
+    <!-- 時計（週末の象徴） -->
+    <g transform="translate(40, 130) scale(0.2)">
+      <circle cx="50" cy="50" r="45" fill="none" stroke="#2A363B" stroke-width="2" />
+      <circle cx="50" cy="50" r="3" fill="#2A363B" />
+      <line x1="50" y1="50" x2="50" y2="20" stroke="#2A363B" stroke-width="2" />
+      <line x1="50" y1="50" x2="70" y2="50" stroke="#2A363B" stroke-width="2" />
+      <text x="40" y="90" font-family="'Noto Sans JP', sans-serif" font-size="12" fill="#2A363B">weekend</text>
+    </g>
+    
+    <!-- 名前 -->
+    <text x="100" y="180" font-family="'Noto Sans JP', sans-serif" font-size="14" font-weight="700" text-anchor="middle" fill="#2A363B">Bさん（52歳男性）</text>
+  </g>
+</svg>

@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- 背景円 -->
+  <circle cx="100" cy="100" r="95" fill="white" stroke="#FF6B6B" stroke-width="2" />
+  
+  <!-- Aさん（48歳女性） -->
+  <g>
+    <!-- 顔 -->
+    <circle cx="100" cy="70" r="30" fill="#FFD166" />
+    
+    <!-- 髪型（ショートヘア） -->
+    <path d="M70,70 Q70,40 100,35 Q130,40 130,70" fill="#654321" />
+    <path d="M70,70 Q75,80 80,75" fill="#654321" />
+    <path d="M130,70 Q125,80 120,75" fill="#654321" />
+    
+    <!-- 顔のパーツ -->
+    <g>
+      <!-- 目 -->
+      <ellipse cx="85" cy="65" rx="5" ry="3" fill="#2A363B" />
+      <ellipse cx="115" cy="65" rx="5" ry="3" fill="#2A363B" />
+      
+      <!-- 眉毛 -->
+      <path d="M75,55 Q85,52 95,55" fill="none" stroke="#2A363B" stroke-width="1.5" stroke-linecap="round" />
+      <path d="M105,55 Q115,52 125,55" fill="none" stroke="#2A363B" stroke-width="1.5" stroke-linecap="round" />
+      
+      <!-- 口（微笑み） -->
+      <path d="M90,85 Q100,90 110,85" fill="none" stroke="#2A363B" stroke-width="1.5" stroke-linecap="round" />
+      
+      <!-- 頬の赤み -->
+      <circle cx="80" cy="75" r="5" fill="#FF6B6B" opacity="0.3" />
+      <circle cx="120" cy="75" r="5" fill="#FF6B6B" opacity="0.3" />
+      
+      <!-- 眼鏡 -->
+      <circle cx="85" cy="65" r="8" fill="none" stroke="#2A363B" stroke-width="1" />
+      <circle cx="115" cy="65" r="8" fill="none" stroke="#2A363B" stroke-width="1" />
+      <path d="M93,65 L107,65" fill="none" stroke="#2A363B" stroke-width="1" />
+      <path d="M77,65 L70,60" fill="none" stroke="#2A363B" stroke-width="1" />
+      <path d="M123,65 L130,60" fill="none" stroke="#2A363B" stroke-width="1" />
+    </g>
+    
+    <!-- 首 -->
+    <path d="M95,100 L95,110 L105,110 L105,100" fill="#FFD166" />
+    
+    <!-- 体（カジュアルな服） -->
+    <path d="M70,145 L85,110 L115,110 L130,145 Z" fill="#FF6B6B" />
+    
+    <!-- 腕 -->
+    <path d="M85,110 L65,125" fill="none" stroke="#FFD166" stroke-width="8" stroke-linecap="round" />
+    <path d="M115,110 L135,125" fill="none" stroke="#FFD166" stroke-width="8" stroke-linecap="round" />
+    
+    <!-- 手 -->
+    <circle cx="65" cy="125" r="5" fill="#FFD166" />
+    <circle cx="135" cy="125" r="5" fill="#FFD166" />
+    
+    <!-- 自信のない感じの表現 -->
+    <g opacity="0.6">
+      <path d="M60,60 Q55,55 50,60" fill="none" stroke="#4ECDC4" stroke-width="1" stroke-dasharray="2,2" />
+      <path d="M140,60 Q145,55 150,60" fill="none" stroke="#4ECDC4" stroke-width="1" stroke-dasharray="2,2" />
+      <text x="100" y="40" font-family="'Noto Sans JP', sans-serif" font-size="8" text-anchor="middle" fill="#2A363B" opacity="0.7">運動は苦手…</text>
+    </g>
+    
+    <!-- 徐々に笑顔になる変化 -->
+    <g>
+      <path d="M50,145 Q55,140 60,145" fill="none" stroke="#4ECDC4" stroke-width="1.5" stroke-linecap="round" opacity="0.7">
+        <animate attributeName="opacity" values="0.7;0;0.7" dur="3s" repeatCount="indefinite" />
+      </path>
+      <path d="M140,145 Q145,140 150,145" fill="none" stroke="#4ECDC4" stroke-width="1.5" stroke-linecap="round" opacity="0.7">
+        <animate attributeName="opacity" values="0.7;0;0.7" dur="3s" repeatCount="indefinite" begin="1s" />
+      </path>
+      <path d="M55,155 Q65,150 75,155" fill="none" stroke="#4ECDC4" stroke-width="1.5" stroke-linecap="round" opacity="0.5">
+        <animate attributeName="opacity" values="0.5;0;0.5" dur="3s" repeatCount="indefinite" begin="0.5s" />
+      </path>
+      <path d="M125,155 Q135,150 145,155" fill="none" stroke="#4ECDC4" stroke-width="1.5" stroke-linecap="round" opacity="0.5">
+        <animate attributeName="opacity" values="0.5;0;0.5" dur="3s" repeatCount="indefinite" begin="1.5s" />
+      </path>
+    </g>
+    
+    <!-- 名前 -->
+    <text x="100" y="180" font-family="'Noto Sans JP', sans-serif" font-size="14" font-weight="700" text-anchor="middle" fill="#2A363B">Aさん（48歳女性）</text>
+  </g>
+</svg>

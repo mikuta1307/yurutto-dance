@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- 背景円 -->
+  <circle cx="100" cy="100" r="95" fill="white" stroke="#4ECDC4" stroke-width="2" stroke-dasharray="5,3" />
+  
+  <!-- ダンスストレッチの図 -->
+  <g>
+    <!-- ストレッチをする人 -->
+    <g transform="translate(100, 110)">
+      <!-- 頭 -->
+      <circle cx="0" cy="-40" r="12" fill="#4ECDC4" />
+      
+      <!-- 体 -->
+      <path d="M0,-28 C-5,-10 -15,0 -30,10" stroke="#4ECDC4" stroke-width="4" stroke-linecap="round" fill="none">
+        <animate attributeName="d" values="M0,-28 C-5,-10 -15,0 -30,10; M0,-28 C-5,-5 -20,-5 -30,0; M0,-28 C-5,-10 -15,0 -30,10" dur="4s" repeatCount="indefinite" />
+      </path>
+      
+      <!-- 右腕 -->
+      <path d="M0,-28 C10,-20 20,-15 25,-5" stroke="#4ECDC4" stroke-width="4" stroke-linecap="round" fill="none">
+        <animate attributeName="d" values="M0,-28 C10,-20 20,-15 25,-5; M0,-28 C15,-25 25,-30 35,-35; M0,-28 C10,-20 20,-15 25,-5" dur="4s" repeatCount="indefinite" />
+      </path>
+      
+      <!-- 左脚 -->
+      <path d="M0,-28 C-5,0 -10,20 -5,40" stroke="#4ECDC4" stroke-width="4" stroke-linecap="round" fill="none">
+        <animate attributeName="d" values="M0,-28 C-5,0 -10,20 -5,40; M0,-28 C-10,0 -20,10 -35,15; M0,-28 C-5,0 -10,20 -5,40" dur="4s" repeatCount="indefinite" />
+      </path>
+      
+      <!-- 右脚 -->
+      <path d="M0,-28 C5,0 10,20 20,30" stroke="#4ECDC4" stroke-width="4" stroke-linecap="round" fill="none">
+        <animate attributeName="d" values="M0,-28 C5,0 10,20 20,30; M0,-28 C10,0 20,5 35,0; M0,-28 C5,0 10,20 20,30" dur="4s" repeatCount="indefinite" />
+      </path>
+    </g>
+    
+    <!-- 流れる曲線 - 体の柔軟性を表現 -->
+    <path d="M40,50 C60,30 80,70 100,50 C120,30 140,70 160,50" stroke="#FFD166" stroke-width="2" fill="none" stroke-dasharray="2,2">
+      <animate attributeName="d" 
+        values="M40,50 C60,30 80,70 100,50 C120,30 140,70 160,50; 
+                M40,55 C60,35 80,75 100,55 C120,35 140,75 160,55; 
+                M40,50 C60,30 80,70 100,50 C120,30 140,70 160,50" 
+        dur="6s" repeatCount="indefinite" />
+    </path>
+    
+    <!-- 円のエフェクト - リラックス感を表現 -->
+    <g>
+      <circle cx="60" cy="80" r="8" fill="none" stroke="#FF6B6B" stroke-width="1.5">
+        <animate attributeName="r" values="8;12;8" dur="3s" repeatCount="indefinite" />
+        <animate attributeName="opacity" values="0.8;0.3;0.8" dur="3s" repeatCount="indefinite" />
+      </circle>
+      <circle cx="140" cy="70" r="10" fill="none" stroke="#FF6B6B" stroke-width="1.5">
+        <animate attributeName="r" values="10;15;10" dur="4s" repeatCount="indefinite" />
+        <animate attributeName="opacity" values="0.8;0.3;0.8" dur="4s" repeatCount="indefinite" />
+      </circle>
+      <circle cx="100" cy="40" r="6" fill="none" stroke="#FF6B6B" stroke-width="1.5">
+        <animate attributeName="r" values="6;9;6" dur="2.5s" repeatCount="indefinite" />
+        <animate attributeName="opacity" values="0.8;0.3;0.8" dur="2.5s" repeatCount="indefinite" />
+      </circle>
+    </g>
+    
+    <!-- 呼吸を表現する波形 -->
+    <path d="M50,160 Q75,150 100,160 T150,160" fill="none" stroke="#4ECDC4" stroke-width="1.5" opacity="0.6">
+      <animate attributeName="d" 
+        values="M50,160 Q75,150 100,160 T150,160; 
+                M50,160 Q75,155 100,160 T150,160; 
+                M50,160 Q75,150 100,160 T150,160" 
+        dur="4s" repeatCount="indefinite" />
+    </path>
+    
+    <!-- クラス名 -->
+    <text x="100" y="170" font-family="'M PLUS Rounded 1c', sans-serif" font-size="16" font-weight="700" text-anchor="middle" fill="#4ECDC4">ダンスストレッチ</text>
+  </g>
+</svg>

@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- 背景円 -->
+  <circle cx="100" cy="100" r="95" fill="white" stroke="#4ECDC4" stroke-width="2" />
+  
+  <!-- 女性インストラクター - 鈴木 美香 -->
+  <g>
+    <!-- 顔 -->
+    <circle cx="100" cy="70" r="30" fill="#FFD166" />
+    
+    <!-- 髪型 -->
+    <path d="M70,80 Q68,60 75,50 Q85,30 100,25 Q115,30 125,50 Q132,60 130,80 Z" fill="#2A363B" />
+    <path d="M70,80 Q75,95 80,120" fill="none" stroke="#2A363B" stroke-width="6" stroke-linecap="round" />
+    <path d="M130,80 Q125,95 120,120" fill="none" stroke="#2A363B" stroke-width="6" stroke-linecap="round" />
+    
+    <!-- 顔のパーツ -->
+    <g>
+      <!-- 目 -->
+      <ellipse cx="85" cy="65" rx="5" ry="3" fill="#2A363B" />
+      <ellipse cx="115" cy="65" rx="5" ry="3" fill="#2A363B" />
+      
+      <!-- まつげ -->
+      <path d="M80,62 L75,60" stroke="#2A363B" stroke-width="1" />
+      <path d="M85,62 L80,58" stroke="#2A363B" stroke-width="1" />
+      <path d="M90,62 L95,58" stroke="#2A363B" stroke-width="1" />
+      
+      <path d="M110,62 L105,58" stroke="#2A363B" stroke-width="1" />
+      <path d="M115,62 L120,58" stroke="#2A363B" stroke-width="1" />
+      <path d="M120,62 L125,60" stroke="#2A363B" stroke-width="1" />
+      
+      <!-- 眉毛 -->
+      <path d="M75,52 Q85,48 95,52" fill="none" stroke="#2A363B" stroke-width="1.5" stroke-linecap="round" />
+      <path d="M105,52 Q115,48 125,52" fill="none" stroke="#2A363B" stroke-width="1.5" stroke-linecap="round" />
+      
+      <!-- 笑顔 -->
+      <path d="M85,80 Q100,90 115,80" fill="none" stroke="#2A363B" stroke-width="2" stroke-linecap="round" />
+    </g>
+    
+    <!-- 首 -->
+    <path d="M95,100 L95,110 L105,110 L105,100" fill="#FFD166" />
+    
+    <!-- 体 - ワンピースドレス風 -->
+    <path d="M65,150 C65,130 85,110 100,110 C115,110 135,130 135,150 Z" fill="#4ECDC4" />
+    
+    <!-- 腕 -->
+    <path d="M85,115 Q75,120 65,130" fill="none" stroke="#FFD166" stroke-width="8" stroke-linecap="round" />
+    <path d="M115,115 Q125,120 135,130" fill="none" stroke="#FFD166" stroke-width="8" stroke-linecap="round" />
+    
+    <!-- 手 -->
+    <circle cx="65" cy="130" r="5" fill="#FFD166" />
+    <circle cx="135" cy="130" r="5" fill="#FFD166" />
+    
+    <!-- セラピー的な要素のエフェクト -->
+    <g>
+      <circle cx="100" cy="85" r="40" fill="none" stroke="#FF6B6B" stroke-width="1" opacity="0.4">
+        <animate attributeName="r" values="40;45;40" dur="3s" repeatCount="indefinite" />
+        <animate attributeName="opacity" values="0.4;0.1;0.4" dur="3s" repeatCount="indefinite" />
+      </circle>
+      <circle cx="100" cy="85" r="50" fill="none" stroke="#FF6B6B" stroke-width="1" opacity="0.3">
+        <animate attributeName="r" values="50;55;50" dur="3s" repeatCount="indefinite" begin="1s" />
+        <animate attributeName="opacity" values="0.3;0.1;0.3" dur="3s" repeatCount="indefinite" begin="1s" />
+      </circle>
+      
+      <!-- リラックスや癒しの波動 -->
+      <path d="M60,50 Q70,45 80,50 T100,50 T120,50 T140,50" fill="none" stroke="#FFD166" stroke-width="1.5" opacity="0.5">
+        <animate attributeName="d" 
+          values="M60,50 Q70,45 80,50 T100,50 T120,50 T140,50; 
+                  M60,48 Q70,43 80,48 T100,48 T120,48 T140,48; 
+                  M60,50 Q70,45 80,50 T100,50 T120,50 T140,50" 
+          dur="4s" repeatCount="indefinite" />
+      </path>
+      <path d="M60,160 Q70,155 80,160 T100,160 T120,160 T140,160" fill="none" stroke="#FFD166" stroke-width="1.5" opacity="0.5">
+        <animate attributeName="d" 
+          values="M60,160 Q70,155 80,160 T100,160 T120,160 T140,160; 
+                  M60,162 Q70,157 80,162 T100,162 T120,162 T140,162; 
+                  M60,160 Q70,155 80,160 T100,160 T120,160 T140,160" 
+          dur="4s" repeatCount="indefinite" begin="1s" />
+      </path>
+    </g>
+    
+    <!-- 名前 -->
+    <text x="100" y="180" font-family="'Noto Sans JP', sans-serif" font-size="14" font-weight="700" text-anchor="middle" fill="#2A363B">鈴木 美香</text>
+  </g>
+</svg>

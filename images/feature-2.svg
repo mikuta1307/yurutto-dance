@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- 背景円 -->
+  <circle cx="100" cy="100" r="95" fill="#F7FFF7" stroke="#4ECDC4" stroke-width="2" />
+  
+  <!-- 健康効果の図 -->
+  <g>
+    <!-- 心臓の脈動を表す波形 -->
+    <path d="M20,100 L40,100 L50,70 L60,130 L70,80 L80,110 L90,100 L100,40 L110,100 L120,90 L130,100 L140,80 L150,110 L160,100 L180,100" 
+      fill="none" stroke="#FF6B6B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+      <animate attributeName="d" 
+        from="M20,100 L40,100 L50,70 L60,130 L70,80 L80,110 L90,100 L100,40 L110,100 L120,90 L130,100 L140,80 L150,110 L160,100 L180,100" 
+        to="M20,100 L40,100 L50,80 L60,120 L70,90 L80,105 L90,100 L100,60 L110,100 L120,95 L130,100 L140,90 L150,105 L160,100 L180,100" 
+        dur="1.5s" repeatCount="indefinite" />
+    </path>
+    
+    <!-- 健康アイコン -->
+    <g transform="translate(80, 65) scale(0.06)">
+      <path d="M336.5,160 C322,70.7 252.8,0 170.7,0 C76.5,0 0,76.5 0,170.7 C0,252.8 70.7,322 160,336.5 L160,509.2 C160,527.1 174.8,541.3 192,541.3 L320,541.3 C337.2,541.3 352,527.1 352,509.2 L352,336.5 C441.3,322 512,252.8 512,170.7 C512,76.5 435.5,0 341.3,0 C259.2,0 190,70.7 175.5,160 L175.5,160 Z" fill="#4ECDC4" />
+    </g>
+    
+    <!-- 汗のしずく -->
+    <g>
+      <path d="M60,70 Q55,80 60,90 Q65,80 60,70 Z" fill="#4ECDC4" opacity="0.8">
+        <animate attributeName="opacity" values="0.8;0.2;0.8" dur="2s" repeatCount="indefinite" />
+      </path>
+      <path d="M150,75 Q145,85 150,95 Q155,85 150,75 Z" fill="#4ECDC4" opacity="0.6">
+        <animate attributeName="opacity" values="0.6;0.1;0.6" dur="2.5s" repeatCount="indefinite" />
+      </path>
+      <path d="M125,60 Q120,70 125,80 Q130,70 125,60 Z" fill="#4ECDC4" opacity="0.7">
+        <animate attributeName="opacity" values="0.7;0.2;0.7" dur="1.8s" repeatCount="indefinite" />
+      </path>
+    </g>
+    
+    <!-- 健康効果テキスト -->
+    <text x="100" y="145" font-family="'Noto Sans JP', sans-serif" font-size="14" text-anchor="middle" fill="#2A363B">健康効果</text>
+  </g>
+</svg>
