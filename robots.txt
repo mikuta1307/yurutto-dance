@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /
+
+# このサイトはポートフォリオ用の架空プロジェクトです。
+# This is a fictional website for portfolio purposes only.
