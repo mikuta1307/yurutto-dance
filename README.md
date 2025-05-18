@@ -130,7 +130,8 @@
 
 ## 👨‍💻 作者
 
-mikuta1307
+mikuta1307 
+
 https://mikuta1307.github.io/yurutto-dance/
 
 ---
